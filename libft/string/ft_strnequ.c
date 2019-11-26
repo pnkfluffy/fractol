@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 13:41:57 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:20 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:28:35 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Lexicographical comparison between s1 and s2 up to n characters or until a

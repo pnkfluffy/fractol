@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 15:00:15 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:18 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:28:05 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Allocates (with malloc(3)) and returns a “fresh” substring

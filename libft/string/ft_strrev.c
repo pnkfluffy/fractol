@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:31:47 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 23:38:14 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:28:19 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Reverses a string.

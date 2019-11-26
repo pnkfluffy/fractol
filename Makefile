@@ -6,7 +6,7 @@
 #    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/25 23:24:55 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/11 15:12:20 by jfelty           ###   ########.fr        #
+#    Updated: 2019/11/25 17:11:09 by jfelty           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,7 +22,9 @@ MLXLIB = minilibx_macos/libmlx.a
 
 LIBFT = libft/libft.a
 
-SRC =	fractol.c
+SRC =	fractol.c \
+		key_hooks.c \
+		frac_math.c
 
 all: $(NAME)
 
@@ -47,7 +49,6 @@ test:
 clean:
 	@rm -f $(OBJ)
 	@make -C libft/ clean
-	@make -C minilibx_macos/ clean
 
 fclean: clean
 	@rm -f fractol

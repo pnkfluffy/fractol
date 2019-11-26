@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/02 23:47:10 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 17:03:05 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:26:11 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Prints out given string to the standard output.

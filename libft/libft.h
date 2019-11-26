@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/23 15:24:48 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/09 20:20:16 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:22:29 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -115,5 +115,6 @@ int					ft_largest_int(int a, int b);
 int64_t				ft_makepos(int64_t a);
 int					ft_getnxtnbr(char *str, char c);
 int					ft_power(int nb, int power);
+double				ft_dblpower(double num, int pow);
 
 #endif

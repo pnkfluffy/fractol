@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 00:24:27 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 17:02:58 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:26:15 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Prints out given string to the given file descriptor.

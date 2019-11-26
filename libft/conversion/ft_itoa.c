@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/03 16:30:21 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:06 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:24:01 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Takes an int value and returns a "fresh" string represeinting the int.

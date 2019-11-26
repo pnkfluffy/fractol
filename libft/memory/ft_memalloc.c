@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 11:41:04 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:57:04 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:25:21 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Allocates and returns a “fresh” memory area. The memory allocated is

@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/23 13:48:44 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:57:18 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:24:17 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Takes an string representation of a number in any base 2-16 and converts it

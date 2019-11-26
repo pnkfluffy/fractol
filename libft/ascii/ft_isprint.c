@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/29 16:25:48 by jfelty            #+#    #+#             */
-/*   Updated: 2019/08/04 12:18:42 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:23:29 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isprint(int c)
 {

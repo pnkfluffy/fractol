@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/25 14:18:27 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 23:35:25 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:29:46 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Allocates and returns a fresh string made from pushing the character c to

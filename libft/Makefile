@@ -6,7 +6,7 @@
 #    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/23 15:25:27 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/09 20:14:53 by jfelty           ###   ########.fr        #
+#    Updated: 2019/11/25 19:22:38 by jfelty           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -87,6 +87,7 @@ SRC =		ascii/ft_isalpha.c \
 			numbers/ft_makepos.c \
 			numbers/ft_isneg.c \
 			numbers/ft_largest_int.c \
+			numbers/ft_dblpower.c \
 			ft_printf/ft_printf.c \
 			ft_printf/populate.c \
 			ft_printf/dispatch.c \

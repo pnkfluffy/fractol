@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 15:30:58 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:16 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:29:05 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Allocates and returns a “fresh” string ending with ’\0’, result of the 

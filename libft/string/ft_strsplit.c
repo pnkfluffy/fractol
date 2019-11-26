@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 17:32:01 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:12 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:28:08 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Allocates and returns an array of “fresh” strings obtained by spliting s

@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 03:40:56 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 23:36:25 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:28:52 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Returns the number of occurances of int/char c in string str.

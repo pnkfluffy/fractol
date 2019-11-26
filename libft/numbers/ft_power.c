@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:04:45 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 23:29:31 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:25:41 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Returns number nb raised to a specified power.

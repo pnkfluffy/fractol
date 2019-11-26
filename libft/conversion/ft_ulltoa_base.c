@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/10/12 13:37:30 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:57:22 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:23:51 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Takes an unsigned long long int value and returns a "fresh" string

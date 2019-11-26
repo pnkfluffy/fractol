@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 12:39:04 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:39:48 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:29:35 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Sets all string contents to NULL;

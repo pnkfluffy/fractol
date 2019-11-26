@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 17:04:55 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:08:22 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/25 19:23:25 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 int	ft_isspace(int c)
 {
