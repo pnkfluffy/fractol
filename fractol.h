@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 18:07:42 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/25 19:42:21 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/26 18:06:04 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ typedef struct      s_frac
 {
 	int				type;
 	int				color;
+	int				active_mouse;
     int             px;
     int             py;
 	int				p;
@@ -87,10 +88,17 @@ int			main();
 **		key_hooks.c
 */
 
-void		reset_pos(t_pos *pos, t_frac *frac);
-void		zoom(int in, t_pos *pos);
 int			hook_key(int key, t_wndw *wndw);
 int			hook_mouse(int button, int x, int y, t_wndw *wndw);
+int			hook_active_mouse(int x, int y, t_wndw *wndw);
+
+/*
+**		key_hooks_help.c
+*/
+
+void		reset_pos(t_pos *pos, t_frac *frac);
+void		change_color(t_frac *frac, int rgb);
+void		zoom(int in, t_pos *pos);
 
 /*
 **		frac_math.c
@@ -101,7 +109,7 @@ void		view_julia(t_frac *frac, t_wndw *wndw);
 void		view_burningship(t_frac *frac, t_wndw *wndw);
 
 /*
-**		misc
+**		frac_load
 */
 
 void		load_fractol(t_wndw *wndw);

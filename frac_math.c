@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:04:37 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/25 20:57:36 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/26 18:11:20 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ void		view_mandelbrot(t_frac *frac, t_wndw *wndw)
 
 void		view_julia(t_frac *frac, t_wndw *wndw)
 {
-	frac->fn = 0.30;
-	frac->fi = 0.01;
 	frac->p = 0;
 	frac->wx = frac->px / wndw->pos->zoom + wndw->pos->fx;
 	frac->wy = frac->py / wndw->pos->zoom + wndw->pos->fy;
@@ -50,7 +48,6 @@ void		view_julia(t_frac *frac, t_wndw *wndw)
 		img_pixel_put(wndw->img, frac->px, frac->py, 0xFFFFFF);
 	else
 		img_pixel_put(wndw->img, frac->px, frac->py, frac->p * frac->color);
-		// img_pixel_put(wndw->img, frac->px, frac->py, 0x000088 - frac->p * frac->p_max);
 }
 
 void		view_burningship(t_frac *frac, t_wndw *wndw)
@@ -72,6 +69,3 @@ void		view_burningship(t_frac *frac, t_wndw *wndw)
 	else
 		img_pixel_put(wndw->img, frac->px, frac->py, frac->p * frac->color);
 }
-
-//790fff
-//ee22ff

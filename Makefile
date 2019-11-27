@@ -6,7 +6,7 @@
 #    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/25 23:24:55 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/25 17:11:09 by jfelty           ###   ########.fr        #
+#    Updated: 2019/11/26 18:06:53 by jfelty           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,9 @@ LIBFT = libft/libft.a
 
 SRC =	fractol.c \
 		key_hooks.c \
-		frac_math.c
+		key_hooks_help.c \
+		frac_math.c \
+		frac_load.c
 
 all: $(NAME)
 
