@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 00:23:22 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/26 18:13:07 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/27 17:26:27 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -75,7 +75,6 @@ int			main(int ac, char **av)
 		return (0);
 	}
 	wndw = initialize_wndw(av);
-	
 	load_fractol(wndw);
 	mlx_loop(wndw->mlx);
 	return (0);

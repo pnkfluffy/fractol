@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 18:07:42 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/26 18:06:04 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/27 17:31:25 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,41 +18,40 @@
 # include <unistd.h>
 # include <pthread.h>
 
-# define WINX 500
-# define WINY 500
-# define MAXCOLOR 16777215
+# define WINX 1000
+# define WINY 1000
 # define ZOOM 1.5
 
 /*
 **	px = pixel x, x on the screen
 **	p = permutations
-**	wx = windowx (only double for math) 
+**	wx = windowx (only double for math)
 **	fx = function x
 **	fn = funtion num
 **	fi = funtion imaginary num
 */
 
-typedef struct      s_frac
+typedef struct		s_frac
 {
 	int				type;
 	int				color;
 	int				active_mouse;
-    int             px;
-    int             py;
+	int				px;
+	int				py;
 	int				p;
 	int				p_max;
 	double			wx;
 	double			wy;
-    double          fn;
-    double          fi;
-    double          tmp;
-}                   t_frac;
+	double			fn;
+	double			fi;
+	double			tmp;
+}					t_frac;
 
 typedef struct		s_pos
 {
 	double			zoom;
-    double          fx;
-    double          fy;
+	double			fx;
+	double			fy;
 	int				mouse_x;
 	int				mouse_y;
 }					t_pos;
@@ -70,7 +69,7 @@ typedef struct		s_wndw
 	void			*mlx;
 	void			*win;
 	t_img			*img;
-    t_frac			*frac;
+	t_frac			*frac;
 	t_pos			*pos;
 }					t_wndw;
 
@@ -78,41 +77,41 @@ typedef struct		s_wndw
 **		fractol.c
 */
 
-void		img_pixel_put(t_img *img, int x, int y, int color);
-t_img		*new_im(t_wndw *wndw);
-t_wndw		*initialize_wndw(char **av);
-int			get_type(char **av);
-int			main();
+void				img_pixel_put(t_img *img, int x, int y, int color);
+t_img				*new_im(t_wndw *wndw);
+t_wndw				*initialize_wndw(char **av);
+int					get_type(char **av);
+int					main();
 
 /*
 **		key_hooks.c
 */
 
-int			hook_key(int key, t_wndw *wndw);
-int			hook_mouse(int button, int x, int y, t_wndw *wndw);
-int			hook_active_mouse(int x, int y, t_wndw *wndw);
+int					hook_key(int key, t_wndw *wndw);
+int					hook_mouse(int button, int x, int y, t_wndw *wndw);
+int					hook_active_mouse(int x, int y, t_wndw *wndw);
 
 /*
 **		key_hooks_help.c
 */
 
-void		reset_pos(t_pos *pos, t_frac *frac);
-void		change_color(t_frac *frac, int rgb);
-void		zoom(int in, t_pos *pos);
+void				reset_pos(t_pos *pos, t_frac *frac);
+void				change_color(t_frac *frac, int rgb);
+void				zoom(int in, t_pos *pos);
 
 /*
 **		frac_math.c
 */
 
-void		view_mandelbrot(t_frac *frac, t_wndw *wndw);
-void		view_julia(t_frac *frac, t_wndw *wndw);
-void		view_burningship(t_frac *frac, t_wndw *wndw);
+void				view_mandelbrot(t_frac *frac, t_wndw *wndw);
+void				view_julia(t_frac *frac, t_wndw *wndw);
+void				view_burningship(t_frac *frac, t_wndw *wndw);
 
 /*
 **		frac_load
 */
 
-void		load_fractol(t_wndw *wndw);
-void		img_pixel_put(t_img *img, int x, int y, int color);
+void				load_fractol(t_wndw *wndw);
+void				img_pixel_put(t_img *img, int x, int y, int color);
 
 #endif

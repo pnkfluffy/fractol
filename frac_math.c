@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:04:37 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/26 18:11:20 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/27 17:23:21 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,8 @@ void		view_mandelbrot(t_frac *frac, t_wndw *wndw)
 	frac->p = 0;
 	frac->fn = frac->px / wndw->pos->zoom + wndw->pos->fx;
 	frac->fi = frac->py / wndw->pos->zoom + wndw->pos->fy;
-	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 && frac->p < frac->p_max)
+	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 &&
+	frac->p < frac->p_max)
 	{
 		frac->tmp = frac->wx * frac->wx - frac->wy * frac->wy + frac->fn;
 		frac->wy = 2 * frac->wx * frac->wy + frac->fi;
@@ -37,7 +38,8 @@ void		view_julia(t_frac *frac, t_wndw *wndw)
 	frac->p = 0;
 	frac->wx = frac->px / wndw->pos->zoom + wndw->pos->fx;
 	frac->wy = frac->py / wndw->pos->zoom + wndw->pos->fy;
-	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 && frac->p < frac->p_max)
+	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 &&
+	frac->p < frac->p_max)
 	{
 		frac->tmp = frac->wx * frac->wx - frac->wy * frac->wy;
 		frac->wy = 2 * frac->wx * frac->wy + frac->fi;
@@ -57,7 +59,8 @@ void		view_burningship(t_frac *frac, t_wndw *wndw)
 	frac->p = 0;
 	frac->fn = frac->px / wndw->pos->zoom + wndw->pos->fx;
 	frac->fi = frac->py / wndw->pos->zoom + wndw->pos->fy;
-	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 && frac->p < frac->p_max)
+	while (frac->wx * frac->wx + frac->wy * frac->wy < 4 &&
+	frac->p < frac->p_max)
 	{
 		frac->tmp = frac->wx * frac->wx - frac->wy * frac->wy + frac->fn;
 		frac->wy = ft_dblpower(2 * frac->wx * frac->wy, 2) + frac->fi;

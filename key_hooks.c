@@ -6,13 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:05:50 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/26 18:24:11 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/27 17:22:44 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "./fractol.h"
-
-
 
 int			hook_key(int key, t_wndw *wndw)
 {
@@ -44,7 +42,7 @@ int			hook_mouse(int button, int x, int y, t_wndw *wndw)
 	wndw->pos->mouse_x = x;
 	wndw->pos->mouse_y = y;
 	if (button == 4 || button == 1 || button == 5 || button == 2)
-		zoom (button == 4 || button == 1 ? 0 : 1, wndw->pos);
+		zoom(button == 4 || button == 1 ? 0 : 1, wndw->pos);
 	load_fractol(wndw);
 	return (0);
 }

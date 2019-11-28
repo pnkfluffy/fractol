@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 17:16:40 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/26 17:17:24 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/27 17:24:55 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,23 +36,27 @@ void	change_color(t_frac *frac, int rgb)
 }
 
 /*
+**	BADASS COLORSETS
 **	790fff
 **	ee22ff
 */
 
-
-void		zoom(int in, t_pos *pos)
+void	zoom(int in, t_pos *pos)
 {
 	if (in)
 	{
-		pos->fx = (pos->mouse_x / pos->zoom + pos->fx) - (pos->mouse_x / (pos->zoom * ZOOM));
-		pos->fy = (pos->mouse_y / pos->zoom + pos->fy) - (pos->mouse_y / (pos->zoom * ZOOM));
+		pos->fx = (pos->mouse_x / pos->zoom + pos->fx) - \
+		(pos->mouse_x / (pos->zoom * ZOOM));
+		pos->fy = (pos->mouse_y / pos->zoom + pos->fy) - \
+		(pos->mouse_y / (pos->zoom * ZOOM));
 		pos->zoom *= ZOOM;
 	}
 	else
 	{
-		pos->fx = (pos->mouse_x / pos->zoom + pos->fx) - (pos->mouse_x / (pos->zoom / ZOOM));
-		pos->fy = (pos->mouse_y / pos->zoom + pos->fy) - (pos->mouse_y / (pos->zoom / ZOOM));
+		pos->fx = (pos->mouse_x / pos->zoom + pos->fx) - \
+		(pos->mouse_x / (pos->zoom / ZOOM));
+		pos->fy = (pos->mouse_y / pos->zoom + pos->fy) - \
+		(pos->mouse_y / (pos->zoom / ZOOM));
 		pos->zoom /= ZOOM;
 	}
 }
