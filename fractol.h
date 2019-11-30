@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 18:07:42 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/27 17:31:25 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/29 16:23:57 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,8 +18,8 @@
 # include <unistd.h>
 # include <pthread.h>
 
-# define WINX 1000
-# define WINY 1000
+# define WINX 400
+# define WINY 400
 # define ZOOM 1.5
 
 /*
@@ -98,6 +98,7 @@ int					hook_active_mouse(int x, int y, t_wndw *wndw);
 void				reset_pos(t_pos *pos, t_frac *frac);
 void				change_color(t_frac *frac, int rgb);
 void				zoom(int in, t_pos *pos);
+void				scroll(int direction, t_pos *pos);
 
 /*
 **		frac_math.c

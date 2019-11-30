@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 17:16:40 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/27 17:24:55 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/29 16:23:16 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,6 +40,18 @@ void	change_color(t_frac *frac, int rgb)
 **	790fff
 **	ee22ff
 */
+
+void	scroll(int direction, t_pos *pos)
+{
+	if (direction == 123)
+		pos->fx -= 10 / pos->zoom;
+	else if (direction == 124)
+		pos->fx += 10 / pos->zoom;
+	else if (direction == 125)
+		pos->fy += 10 / pos->zoom;
+	else if (direction == 126)
+		pos->fy -= 10 / pos->zoom;
+}
 
 void	zoom(int in, t_pos *pos)
 {

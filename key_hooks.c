@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:05:50 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/27 17:22:44 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/29 16:19:17 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,8 @@ int			hook_key(int key, t_wndw *wndw)
 		change_color(wndw->frac, key);
 	else if (key == 46)
 		wndw->frac->active_mouse = (wndw->frac->active_mouse == 1) ? 0 : 1;
+	else if (key >= 123 && key <= 126)
+		scroll(key, wndw->pos);
 	else if (key == 53)
 		exit(1);
 	load_fractol(wndw);
