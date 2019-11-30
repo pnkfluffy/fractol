@@ -6,7 +6,7 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/01 16:58:17 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/25 19:28:00 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/29 17:01:28 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,8 @@
 
 /*
 **	Allocates and returns a copy of the string given as argument without
-**	whitespaces at the beginning or at the end of the string. If no whitespaces at
-**	the beginning or at the end, the function returns a copy of s.
+**	whitespaces at the beginning or at the end of the string. If no whitespaces
+**	at the beginning or at the end, the function returns a copy of s.
 */
 
 char	*ft_strtrim(char const *s)
