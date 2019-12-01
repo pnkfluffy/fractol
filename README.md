@@ -15,3 +15,9 @@ To Do:
 	-add multithreading
 	-add more fractols
 	-add color gradients between fractol depth
+
+![Fractol Screenshot](https://cdn.discordapp.com/attachments/613478885174018084/650588712647917579/unknown.png)
+
+![Fractol Screenshot2](https://cdn.discordapp.com/attachments/613478885174018084/650588957360521218/unknown.png)
+
+![Fractol Screenshot3](https://cdn.discordapp.com/attachments/613478885174018084/650589948814295091/unknown.png)
