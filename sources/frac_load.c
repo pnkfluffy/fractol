@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 17:14:42 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/29 16:38:29 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 22:58:01 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./fractol.h"
+#include "../includes/fractol.h"
 
 void		img_pixel_put(t_img *img, int x, int y, int color)
 {

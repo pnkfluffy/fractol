@@ -6,14 +6,14 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/10 18:07:42 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/29 16:40:12 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 22:58:57 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FRACTOL_H
 # define FRACTOL_H
-# include "libft/libft.h"
-# include "minilibx_macos/mlx.h"
+# include "../sources/libft/libft.h"
+# include "../minilibx_macos/mlx.h"
 # include <math.h>
 # include <unistd.h>
 # include <pthread.h>

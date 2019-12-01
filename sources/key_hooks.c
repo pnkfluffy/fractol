@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:05:50 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/29 16:19:17 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 22:58:13 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./fractol.h"
+#include "../includes/fractol.h"
 
 int			hook_key(int key, t_wndw *wndw)
 {

@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/26 17:16:40 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/29 16:23:16 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 22:58:11 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./fractol.h"
+#include "../includes/fractol.h"
 
 void	reset_pos(t_pos *pos, t_frac *frac)
 {

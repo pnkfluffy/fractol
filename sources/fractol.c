@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/26 00:23:22 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/27 17:26:27 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 23:01:53 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./fractol.h"
+#include "../includes/fractol.h"
 
 t_img		*new_im(t_wndw *wndw)
 {
@@ -54,7 +54,9 @@ t_wndw		*initialize_wndw(char **av)
 		return (NULL);
 	reset_pos(wndw->pos, wndw->frac);
 	wndw->frac->type = get_type(av);
-	wndw->frac->color = 0x000000;
+	wndw->frac->color = 0xee22ff;
+	wndw->frac->fi = 0.94;
+	wndw->frac->fn = 0.01;
 	wndw->frac->active_mouse = 0;
 	wndw->img = new_im(wndw);
 	mlx_hook(wndw->win, 6, 0, hook_active_mouse, wndw);

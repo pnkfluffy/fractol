@@ -6,7 +6,7 @@
 #    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/25 23:24:55 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/26 18:06:53 by jfelty           ###   ########.fr        #
+#    Updated: 2019/11/30 23:03:37 by jfelty           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,13 +20,13 @@ MLXFLAGS = -framework OpenGL -framework AppKit
 
 MLXLIB = minilibx_macos/libmlx.a
 
-LIBFT = libft/libft.a
+LIBFT = sources/libft/libft.a
 
-SRC =	fractol.c \
-		key_hooks.c \
-		key_hooks_help.c \
-		frac_math.c \
-		frac_load.c
+SRC =	sources/fractol.c \
+		sources/key_hooks.c \
+		sources/key_hooks_help.c \
+		sources/frac_math.c \
+		sources/frac_load.c
 
 all: $(NAME)
 
@@ -36,7 +36,7 @@ mlx:
 	@make -C minilibx_macos
 
 lib:
-	@make -C libft
+	@make -C sources/libft
 	@echo "libft complete"
 #uses make command in library
 
@@ -50,11 +50,11 @@ test:
 
 clean:
 	@rm -f $(OBJ)
-	@make -C libft/ clean
+	@make -C sources/libft/ clean
 
 fclean: clean
 	@rm -f fractol
-	@make -C libft/ fclean
+	@make -C sources/libft/ fclean
 	@make -C minilibx_macos/ clean
 
 re: fclean all

@@ -6,11 +6,11 @@
 /*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/11/25 17:04:37 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/27 17:23:21 by jfelty           ###   ########.fr       */
+/*   Updated: 2019/11/30 22:58:06 by jfelty           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "./fractol.h"
+#include "../includes/fractol.h"
 
 void		view_mandelbrot(t_frac *frac, t_wndw *wndw)
 {
