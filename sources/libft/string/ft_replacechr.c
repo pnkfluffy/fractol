@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_replacechr.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 04:44:50 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 23:37:15 by jfelty           ###   ########.fr       */
+/*   Updated: 2020/03/20 22:22:23 by pnkfluffy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	Takes a string and replaces all instances of char 'old' with char 'new'.

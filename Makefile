@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
+#    By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/25 23:24:55 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/30 23:03:37 by jfelty           ###   ########.fr        #
+#    Updated: 2020/03/21 01:02:10 by pnkfluffy        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,21 @@ all: $(NAME)
 
 $(NAME): lib mlx out clean
 
+linux: lib linux_mlx linux_out
+
+linux_mlx:
+	@make -C minilibx_linux/minilibx
+
+linux_out:
+	@$(CC) $(SRC) minilibx_linux/minilibx/libmlx.a $(LIBFT) -lm -lX11 -lXext -o $(NAME)
+
+linux_fclean: clean
+	@rm -f fractol
+	@make -C sources/libft/ fclean
+	@make -C minilibx_linux/minilibx clean
+
+linux_re: linux_fclean linux
+
 mlx:
 	@make -C minilibx_macos
 
@@ -41,7 +56,7 @@ lib:
 #uses make command in library
 
 out:
-	@$(CC) $(CFLAGS) $(SRC) $(MLXLIB) $(LIBFT) $(MLXFLAGS) -o fractol
+	@$(CC) $(SRC) $(MLXLIB) $(LIBFT) $(MLXFLAGS) -o fractol
 	@echo "Fractol Generation Complete"
 
 test:

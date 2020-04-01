@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
+#    By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/09/14 10:38:32 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/09 00:26:47 by jfelty           ###   ########.fr        #
+#    Updated: 2020/03/20 22:15:05 by pnkfluffy        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -32,6 +32,8 @@ OB = ./*.o
 FT_LIB = ../libft/libft.a
 
 FT_LIB_OB = ../libft/*.o
+
+CFLAGS = -Wno-error=address -Wno-pointer-to-int-cast
 
 all: $(NAME)
 

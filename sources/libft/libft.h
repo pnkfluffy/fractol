@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/23 15:24:48 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/25 19:22:29 by jfelty           ###   ########.fr       */
+/*   Updated: 2020/03/20 22:10:24 by pnkfluffy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define LIBFT_H
 
 # include <stdlib.h>
+# include <stdint.h>
 # include <unistd.h>
 # include "./ft_printf/ft_printf.h"
 

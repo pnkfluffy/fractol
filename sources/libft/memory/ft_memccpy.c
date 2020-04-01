@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/07/31 16:51:28 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/08 16:57:09 by jfelty           ###   ########.fr       */
+/*   Updated: 2020/03/20 22:24:47 by pnkfluffy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 **	man 3 memccpy

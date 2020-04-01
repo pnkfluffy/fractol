@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_getnxtnbr.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+        */
+/*   By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/09/18 05:20:11 by jfelty            #+#    #+#             */
-/*   Updated: 2019/11/25 19:21:45 by jfelty           ###   ########.fr       */
+/*   Updated: 2020/03/20 22:11:04 by pnkfluffy        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,12 +19,10 @@
 
 int		ft_getnxtnbr(char *str, char c)
 {
-	int i;
 	int pos;
 	int result;
 
 	pos = 1;
-	i = 0;
 	result = 0;
 	while (*str != c && !ft_isspace(*str) && *str)
 	{

@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: jfelty <jfelty@student.42.fr>              +#+  +:+       +#+         #
+#    By: pnkfluffy <pnkfluffy@student.42.fr>        +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/07/23 15:25:27 by jfelty            #+#    #+#              #
-#    Updated: 2019/11/25 19:22:38 by jfelty           ###   ########.fr        #
+#    Updated: 2020/03/20 22:17:34 by pnkfluffy        ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -102,6 +102,8 @@ OBJ = $(SRC:.c=.o)
 #the .object varients of the SRC files
 
 all: $(NAME)
+
+CFLAGS = -Wno-error=address -Wno-pointer-to-int-cast
 
 $(NAME): $(OBJ)
 	@ar rc $(NAME) $(OBJ)
